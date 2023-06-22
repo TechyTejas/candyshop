@@ -7,7 +7,8 @@ import Itemlist from './Components/Itemlist';
 function App() {
   const[getdata,setGetdata]=useState([]);
 
-  function addCandyHandler (id,price,name,descri){
+  function addCandyHandler (name,descri,price,id){
+    console.log(name,descri,price)
     setGetdata ( prevData =>{
               return [...prevData,
                 {id : Math.random().toString(),
@@ -17,6 +18,7 @@ function App() {
               }]
         })    
   }
+
 
   return (
     <div >    

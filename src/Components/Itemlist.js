@@ -13,6 +13,9 @@ export default function Itemlist(props) {
         {candy.price}
         {candy.descri}
         </li>
+        <button>Add 1</button>
+        <button>Add 2</button>
+        <button>Add 3</button>
         </ul>
       ))}
     </div>
