@@ -1,0 +1,33 @@
+/* Styles for the modal */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  max-width: 90%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+/* Styles for the blurred background */
+.modalbackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity to control the blur intensity */
+  backdrop-filter: blur(8px); /* Adjust the blur radius as desired */
+  z-index: 9998;
+}
+
+/* Additional styles */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling in the background when the modal is open */
+}

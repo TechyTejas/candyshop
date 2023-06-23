@@ -1,12 +1,20 @@
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
+import classes from './Modal.module.css';
 
-const modal = document.getElementById('modal');
+const modalRoot = document.getElementById('modal');
 
 export default function Modal() {
-  return (
+  return ReactDOM.createPortal(
     <Fragment>
-      {ReactDOM.createPortal(<h1>tejas</h1>, modal)}
-    </Fragment>
+      <div className={classes.modalbackground}>
+        <div className={classes.modal}>
+          <h1>Modal Title</h1>
+          {/* Modal content goes here */}
+           
+        </div>
+      </div>
+    </Fragment>,
+    modalRoot
   );
 }

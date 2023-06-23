@@ -52,9 +52,10 @@ function DescriHandler (event){
         <input type="number" value={enterPrice} onChange={PriceHandler}/>
 
         <button type="submit">Add</button>
-        <button className={classes.button} onClick={modalHandler}>Show Cart</button>
-        {open &&(<Modal />)}  
+        
       </form>
+      <button className={classes.button} onClick={modalHandler}>Show Cart</button>
+        {open &&(<Modal />)}  
       </div>
     </React.Fragment>
   );
